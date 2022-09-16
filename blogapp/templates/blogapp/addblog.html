@@ -1,0 +1,65 @@
+{% include "header.html" %}
+
+{% block content %}   
+
+<div class="container-fluid">
+
+    <div class="container">
+    
+    <section class="add_form">
+    
+        <div class="heading">
+    
+            <h1>Add Posts</h1>   
+           </div>
+    
+        <form method="post" enctype="multipart/form-data" class="add_post_form">
+            {% csrf_token %}
+          <!-- Firs Name input -->
+            <div class="form-group form-outline mb-4">
+                <label for="usr">Post Title:</label>
+                <input type="text" class="form-control" id="usr" name="title">
+              </div>
+    
+    
+           <!-- Last Name input -->  
+              <div class="form-group form-outline mb-4">
+                <label for="usr"> Slug:</label>
+                <input type="text" class="form-control" id="usr" name="slug">
+              </div>
+    
+            <!-- Age input -->  
+              <!-- <div class="form-group form-outline mb-4">
+                <label for="usr">Author Name:</label>
+                <input type="select" class="form-control" id="usr" name="author">
+              </div> -->
+            
+            <!-- Age input -->  
+            <div class="form-group form-outline mb-4">
+                <label for="usr">Add Content:</label>
+                <input type="text" class="form-control" id="usr" name="content">
+            </div> 
+              <!-- Age input -->  
+              <div class="form-group form-outline mb-4 add_img">
+                <label for="usr">Add image:</label>
+                <input type="file" class="form-control post_img " id="usr" name="blog_image">
+            </div> 
+            
+            
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+          
+    </section>
+    </div>    
+    </div>
+<!-- <p>{{ post.body }}</p> -->
+
+
+
+
+
+
+
+
+
+{% endblock %}

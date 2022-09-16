@@ -1,0 +1,319 @@
+
+body {
+	font-family: 'Varela Round', sans-serif;
+    /* background: #282626 !important; */
+}
+.form-control {
+	box-shadow: none;		
+	font-weight: normal;
+	font-size: 13px;
+}
+.navbar {
+	background: #fff;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-bottom: 1px solid #dfe3e8;
+	border-radius: 0;
+}
+.nav-link img {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	margin: -8px 0;
+	float: left;
+	margin-right: 10px;
+}
+.header_menu a.nav-link:hover {
+    color: #00c739 !important;
+    transition: 1s;
+}
+.navbar .navbar-brand {
+	padding-left: 0;
+	font-size: 20px;
+	padding-right: 50px;
+}
+.bg-gredient .navbar-brand img {
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+}
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+}
+.bg-gredient {
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgb(42 40 40) 0%, rgb(38 36 36) 100.2% );
+}
+.navbar .form-inline {
+	display: inline-block;
+}
+.navbar a {
+	color: #888;
+	font-size: 15px;
+}
+
+.header_menu .nav-link {
+    color: rgb(255 255 255 / 62%) !important;
+    font-size: 16px;
+    font-family: system-ui;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.nav-item span, a {
+    color: rgb(255 255 255 / 62%) !important;
+    font-size: 16px;
+    font-family: system-ui;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.search-box {
+	position: relative;
+}	
+.search-box input {
+	padding-right: 35px;
+	border-color: #dfe3e8;
+	border-radius: 4px !important;
+	box-shadow: none
+}
+.search-box .input-group-text {
+	min-width: 35px;
+	border: none;
+	background: transparent;
+	position: absolute;
+	right: 0;
+	z-index: 9;
+	padding: 7px;
+	height: 100%;
+}
+.search-box i {
+	color: #a0a5b1;
+	font-size: 19px;
+}
+
+.navbar .sign-up-btn {
+	min-width: 110px;
+	max-height: 36px;
+}
+.navbar .dropdown-menu {
+	color: #999;
+	font-weight: normal;
+	border-radius: 1px;
+	border-color: #e5e5e5;
+	box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.navbar a, .navbar a:active {
+	color: #888;
+	padding: 8px 20px;
+	background: transparent;
+	line-height: normal;
+}
+.navbar .navbar-form {
+	border: none;
+}
+.navbar .action-form {
+	width: 280px;
+	padding: 20px;
+	left: auto;
+	right: 0;
+	font-size: 14px;
+}
+.navbar .action-form a {		
+	color: #33cabb;
+	padding: 0 !important;
+	font-size: 14px;
+}
+.navbar .action-form .hint-text {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+.navbar .btn-primary, .navbar .btn-primary:active {
+	color: #fff;
+	background: #dc3545 !important;
+	border: none;
+}	
+.navbar .btn-primary:hover, .navbar .btn-primary:focus {		
+	color: #fff;
+	background: #dc3545 !important;
+}
+.navbar .social-btn .btn, .navbar .social-btn .btn:hover {
+	color: #fff;
+	margin: 0;
+	padding: 0 !important;
+	font-size: 13px;
+	border: none;
+	transition: all 0.4s;
+	text-align: center;
+	line-height: 34px;
+	width: 47%;
+	text-decoration: none;
+}
+.navbar .social-btn .facebook-btn {
+	background: #507cc0;
+}
+.navbar .social-btn .facebook-btn:hover {
+	background: #4676bd;
+}
+.navbar .social-btn .twitter-btn {
+	background: #64ccf1;
+}
+.navbar .social-btn .twitter-btn:hover {
+	background: #4ec7ef;
+}
+.navbar .social-btn .btn i {
+	margin-right: 5px;
+	font-size: 16px;
+	position: relative;
+	top: 2px;
+}
+.or-seperator {
+	margin-top: 32px;
+	text-align: center;
+	border-top: 1px solid #e0e0e0;
+}
+.or-seperator b {
+	color: #666;
+	padding: 0 8px;
+	width: 30px;
+	height: 30px;
+	font-size: 13px;
+	text-align: center;
+	line-height: 26px;
+	background: #fff;
+	display: inline-block;
+	border: 1px solid #e0e0e0;
+	border-radius: 50%;
+	position: relative;
+	top: -15px;
+	z-index: 1;
+}
+.navbar .action-buttons .dropdown-toggle::after {
+	display: none;
+}
+.form-check-label input {
+	position: relative;
+	top: 1px;
+}
+
+/* add post page css */
+
+section.add_form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 0 0 11px 5px #00c7399e;
+    padding: 50px;
+}
+
+.add_img input#usr {
+    padding: 3px 10px;
+}
+.add_post_form  button.btn.btn-primary.btn-block {
+    background-color: #00c739;
+    border-radius: 0;
+    border-color: #00c739;
+    font-size: 16px;
+    font-weight: 700;
+}
+.add_post_form input {
+    border-radius: 0;
+    border: 2px solid rgba(0, 128, 0, 0);
+    box-shadow: 0 0 1px 0px #28a74600;
+    background: #0000003d;
+}
+.add_form .heading {
+    text-align: center;
+    color: #6a6a6a;
+    text-shadow: 1px 1px 0px #ffffff;
+}
+
+.add_post_form label {
+    color: #666663;
+    font-weight: 600;
+    font-size: 18px;
+    text-shadow: 1px 0px 0px white;
+    letter-spacing: 1.5px;
+}
+section.add_form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 5px 6px 17px 4px #000000b3;
+    padding: 50px;
+    background-image:  linear-gradient(45deg, black, #0000007d);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.post_content h1.title {
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: monospace;
+}
+.post_content .post_paratxt p {
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.comment_sec h4 {
+    font-size: 16px;
+}
+
+.comment_sec ul, li {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+}
+.gradient-custom {
+	/* fallback for old browsers */
+	background: #6a11cb;
+	
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+	
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+
+.form_fields input, .signup_fields input {
+		width: 95%;
+		min-height: 40px;
+		background: transparent;
+		border: 1px solid #fff;
+		margin-bottom: 20px;
+		color: #fff;
+		font-family: system-ui;
+		font-size: 16px;
+	}
+
+/* responsive css */
+@media (min-width: 1200px){
+	.form-inline .input-group {
+		width: 300px;
+		margin-left: 30px;
+	}
+}
+@media (max-width: 768px){
+	.navbar .dropdown-menu.action-form {
+		width: 100%;
+		padding: 10px 15px;
+		background: transparent;
+		border: none;
+	}
+	.navbar .form-inline {
+		display: block;
+	}
+	.navbar .input-group {
+		width: 100%;
+	}
+.common_padding{
+	margin-top: 100px;
+}
+}	

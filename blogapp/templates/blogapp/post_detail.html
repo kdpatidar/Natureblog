@@ -1,0 +1,47 @@
+{% include "header.html" %}{% block content %}
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 card mb-4  mt-3 left  top">
+        <div class="card-body">
+            {% for i in post %}
+            
+          <h1>{% block title %} {{ i.title  }} {% endblock title %}</h1>
+          <p class=" text-muted"> {{ i.created_on }}</p>
+          {% if i.blog_image %}
+          <img src="{{i.blog_image.url}}" alt="Smiley face" width="250" height="250">
+              {% endif %}
+          <p class="card-text ">{{ i.content }}</p>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+ 
+  {% endfor %}
+  
+  <div class="container comment_sec">
+    <h1>Comments on Post</h1>
+    {% for comment in com %}
+    <ul>
+      <li><small><strong> Comment on:</strong> {{comment.comment_date}}</small> </li>
+      <li><small><strong>Commented by: </strong>{{comment.username}}</small> </li>
+    
+    </ul>
+    
+    <h4><strong>Comment:</strong> {{ comment.comment }}</h4>
+    <button type="submit" value="reply">reply</button>
+      <hr>
+    {% endfor %}
+  </div>
+  <div class="comment_box container mb-4 ">
+    <form method="POST">
+      {% for c in post %}
+      {%csrf_token %}
+      {{ form.comment }}
+      {{ form.username }}
+      {% endfor %}
+      <input type="submit" value="comment"> 
+  </form>           
+  </div>
+{% endblock content %}
